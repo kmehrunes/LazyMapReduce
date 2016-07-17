@@ -19,6 +19,15 @@ namespace LazyMapReduce
 	}
 
 	/// <summary>
+	/// A typless version of MapReduceTask, which assumes that all of its types are object.
+	/// It makes initializing a task simpler but it requires casting to apply certain operations
+	/// on input/output keys/values.
+	/// </summary>
+	public class TypelessMapReduce: MapReduceTask<object, object, object, object, object, object>
+	{
+	}
+
+	/// <summary>
 	/// A lazy, yet no so bad for educational purpose, implementation of MapReduce. It is not meant for any
 	/// production level implementation, it's just a playground for those who want to have fun implementing
 	/// anything in MapReduce, or those who just want to try it out.
