@@ -1,0 +1,7 @@
+*.sln
+*.userprefs
+*.csproj
+Properties/
+bin/
+obj/
+Program.cs
