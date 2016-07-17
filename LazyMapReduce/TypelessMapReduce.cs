@@ -2,7 +2,7 @@
 
 namespace LazyMapReduce
 {
-	public abstract class TypelessMapReduce: MapReduceTask<object, object, object, object, object, object>
+	public class TypelessMapReduce: MapReduceTask<object, object, object, object, object, object>
 	{
 	}
 }
